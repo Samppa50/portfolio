@@ -25,8 +25,8 @@ function App() {
           <h2>Projects</h2>
           <div className="projects-grid">
             <div className="project">
-              <h3>Project 1</h3>
-              <p>A web app built with React and Vite.</p>
+              <h3>Synthtetic Health Data Project</h3>
+              <p>A web app for synthesizing csv/xlsx data.</p>
             </div>
             <div className="project">
               <h3>Project 2</h3>
