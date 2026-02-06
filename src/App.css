@@ -65,6 +65,40 @@ section h2 {
   border-radius: 8px;
 }
 
+.synthetic-health-project {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.synthetic-health-project h3,
+.synthetic-health-project p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+.card-game{
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-game h3,
+.card-game p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+
 footer {
   text-align: center;
   margin-top: 2em;

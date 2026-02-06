@@ -24,13 +24,13 @@ function App() {
         <section id="projects">
           <h2>Projects</h2>
           <div className="projects-grid">
-            <div className="project">
+            <div className="project synthetic-health-project" style={{backgroundImage: 'url(/synthetichealthdatapic.png)'}}>
               <h3>Synthtetic Health Data Project</h3>
               <p>A web app for synthesizing csv/xlsx data.</p>
             </div>
-            <div className="project">
-              <h3>Project 2</h3>
-              <p>Another cool project.</p>
+            <div className="project card-game" style={{backgroundImage: 'url(/cardgamepic.png)'}}>
+              <h3>Card Game Project</h3>
+              <p>Godot powered card game.</p>
             </div>
           </div>
         </section>
