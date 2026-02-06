@@ -32,6 +32,14 @@ function App() {
               <h3>Card Game Project</h3>
               <p>Godot powered card game.</p>
             </div>
+            <div className="project thesis" style={{backgroundImage: 'url(/thesispic.png)'}}>
+              <h3>Thesis Project</h3>
+              <p>Thesis project I made for Combi Cool.</p>
+            </div>
+            <div className="project portfolio-project" style={{backgroundImage: 'url(/cardgamepic.png)'}}>
+              <h3>Portfolio Project</h3>
+              <p>The very page you are on.</p>
+            </div>
           </div>
         </section>
         <section id="contact">
