@@ -44,7 +44,13 @@ function App() {
         </section>
         <section id="contact">
           <h2>Contact</h2>
-          <p>Email: silvansami50@gmail.com</p>
+          <p 
+            onClick={() => navigator.clipboard.writeText('silvansami50@gmail.com')}
+            style={{ cursor: 'pointer' }}
+            title="Click to copy email"
+          >
+            Email: silvansami50@gmail.com
+          </p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/sami-silvan-1b898b267/">Sami Silvan</a></p>
           <p>GitHub: <a href="https://github.com/Samppa50">@Samppa50</a></p>
         </section>
