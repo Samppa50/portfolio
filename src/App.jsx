@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="portfolio">
       <header>
-        <h1>My Personal Portfolio</h1>
+        <h1>Sami Silvan</h1>
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
@@ -13,31 +13,28 @@ function App() {
       </header>
       <main>
         <section id="about">
-          <h2>About Me</h2>
+          <h2>About</h2>
           <p>
-            Filler text while I work on this! Filler text while I work on this! Filler text while I work on this!
-            Filler text while I work on this! Filler text while I work on this! Filler text while I work on this!
-            Filler text while I work on this! Filler text while I work on this! Filler text while I work on this!
-            Filler text while I work on this! Filler text while I work on this! Filler text while I work on this!
+            Software engineer with a batchelor's degree in computer engineering from Tampere university of applied siences.
           </p>
         </section>
         <section id="projects">
           <h2>Projects</h2>
           <div className="projects-grid">
             <div className="project synthetic-health-project" style={{backgroundImage: 'url(/synthetichealthdatapic.png)'}}>
-              <h3>Synthtetic Health Data Project</h3>
+              <h3>Synthtetic Health Data</h3>
               <p>A web app for synthesizing csv/xlsx data.</p>
             </div>
             <div className="project card-game" style={{backgroundImage: 'url(/cardgamepic.png)'}}>
-              <h3>Card Game Project</h3>
+              <h3>Card Game</h3>
               <p>Godot powered card game.</p>
             </div>
             <div className="project thesis" style={{backgroundImage: 'url(/thesispic.png)'}}>
-              <h3>Thesis Project</h3>
+              <h3>Thesis</h3>
               <p>Thesis project I made for Combi Cool.</p>
             </div>
-            <div className="project portfolio-project" style={{backgroundImage: 'url(/cardgamepic.png)'}}>
-              <h3>Portfolio Project</h3>
+            <div className="project portfolio-project" style={{backgroundImage: 'url(/Skirjain.png)'}}>
+              <h3>Portfolio</h3>
               <p>The very page you are on.</p>
             </div>
           </div>
