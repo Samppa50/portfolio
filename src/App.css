@@ -66,10 +66,26 @@ section h2 {
   gap: 1em;
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
 .project {
   border: 1px solid #ddd;
   padding: 1em;
   border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-link:hover .project {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .synthetic-health-project {
