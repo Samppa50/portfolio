@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
 import HomePage from './pages/HomePage'
 import SyntheticHealthProject from './pages/SyntheticHealthProject'
 import CardGame from './pages/CardGame'
