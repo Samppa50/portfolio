@@ -12,26 +12,16 @@ function CardGame() {
           <img src="/cardgamepic.png" alt="Card Game" className="w-full h-auto max-h-96 object-cover rounded-lg mb-6" />
           <h2 className="text-slate-700 mb-4 text-xl md:text-2xl">Card Game</h2>
           <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-            FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER
-            FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER
-            FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER
+            A game project where the idea was to cross pokemon and slay the spire style of games. The project hasn't seen work in a while but I'm including it here
+             because it was an abitious project that taught me a lot about managing large amounts of code and the need for making modular and easy to manage code.
           </p>
           
-          <h3 className="text-slate-700 mt-8 mb-4 text-xl">Features</h3>
+          <h3 className="text-slate-700 mt-8 mb-4 text-xl">Technologies</h3>
           <ul className="text-gray-600 leading-relaxed ml-6">
-            <li className="mb-2">FILLER TEXT</li>
-            <li className="mb-2">FILLER TEXT</li>
-            <li className="mb-2">FILLER TEXT</li>
-            <li className="mb-2">FILLER TEXT</li>
+            <li className="mb-2">Godot</li>
+
           </ul>
 
-          <h3 className="text-slate-700 mt-8 mb-4 text-xl">Technologies</h3>
-          <p className="text-gray-600 leading-relaxed">FILLER TEXT</p>
-
-          <h3 className="text-slate-700 mt-8 mb-4 text-xl">Result</h3>
-          <p className="text-gray-600 leading-relaxed">
-            FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER
-          </p>
         </section>
       </main>
       <footer className="text-center p-8 mt-8">
