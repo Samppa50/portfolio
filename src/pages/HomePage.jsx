@@ -30,24 +30,27 @@ function HomePage() {
 
   return (
     <div className="w-4/5 flex flex-col mx-auto my-8">
-      <header className="text-center mb-8">
-        <h1 className="text-4xl mb-2.5">Sami Silvan</h1>
-        <nav className="flex justify-center gap-5">
-          <a href="#about" className="no-underline text-black font-bold hover:underline">About</a>
-          <a href="#projects" className="no-underline text-black font-bold hover:underline">Projects</a>
-          <a href="#contact" className="no-underline text-black font-bold hover:underline">Contact</a>
-        </nav>
-      </header>
       <main className="flex flex-col gap-8">
-        <section id="about" className="p-4 border-b border-gray-300">
+        <section id="home" className="min-h-screen flex flex-col justify-center items-center p-8 text-center border-b border-gray-300" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
+          <div className="max-w-2xl">
+            <h2 className="text-5xl font-bold mb-4">Sami Silvan</h2>
+            <p className="text-lg mb-6">I build stuff.</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="#about" className="rounded-full border border-black px-6 py-3 text-black font-semibold hover:bg-black hover:text-white transition">About</a>
+              <a href="#projects" className="rounded-full border border-black px-6 py-3 text-black font-semibold hover:bg-black hover:text-white transition">Projects</a>
+              <a href="#contact" className="rounded-full border border-black px-6 py-3 text-black font-semibold hover:bg-black hover:text-white transition">Contact</a>
+            </div>
+          </div>
+        </section>
+        <section id="about" className="min-h-screen p-8 border-b border-gray-300" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
           <h2 className="text-3xl mb-4">About</h2>
           <p>
-            Software engineer with a batchelor's degree in computer engineering from Tampere university of applied siences.
+            Software engineer with a bachelors degree in computer engineering from Tampere University of Applied Sciences. I focus on building efficient web apps, thoughtful UI, and clean, maintainable code.
           </p>
         </section>
-        <section id="projects" className="p-4 border-b border-gray-300">
+        <section id="projects" className="min-h-screen p-8 border-b border-gray-300" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
           <h2 className="text-3xl mb-4">Projects</h2>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project) => (
               <Link 
                 key={project.id} 
@@ -65,22 +68,19 @@ function HomePage() {
             ))}
           </div>
         </section>
-        <section id="contact" className="p-4">
+        <section id="contact" className="min-h-screen p-8" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
           <h2 className="text-3xl mb-4">Contact</h2>
           <p 
             onClick={() => navigator.clipboard.writeText('silvansami50@gmail.com')}
-            className="cursor-pointer"
+            className="cursor-pointer mb-4"
             title="Click to copy email"
           >
             Email: silvansami50@gmail.com
           </p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/sami-silvan-1b898b267/">Sami Silvan</a></p>
-          <p>GitHub: <a href="https://github.com/Samppa50">@Samppa50</a></p>
+          <p className="mb-2">LinkedIn: <a href="https://www.linkedin.com/in/sami-silvan-1b898b267/" className="text-blue-600 hover:underline">Sami Silvan</a></p>
+          <p>GitHub: <a href="https://github.com/Samppa50" className="text-blue-600 hover:underline">@Samppa50</a></p>
         </section>
       </main>
-      <footer className="text-center mt-8 p-4 border-t border-gray-300">
-        <p>&copy; 2026 Sami Silvan</p>
-      </footer>
     </div>
   )
 }

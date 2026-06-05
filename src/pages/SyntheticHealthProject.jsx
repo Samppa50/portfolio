@@ -29,9 +29,6 @@ function SyntheticHealthProject() {
 
         </section>
       </main>
-      <footer className="text-center p-8 mt-8">
-        <p>&copy; 2026 Sami Silvan</p>
-      </footer>
     </div>
   )
 }

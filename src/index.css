@@ -48,6 +48,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
