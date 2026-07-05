@@ -45,7 +45,7 @@ function HomePage() {
         <section id="about" className="min-h-screen p-8 border-b border-gray-300" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
           <h2 className="text-3xl mb-4">About</h2>
           <p>
-            Software engineer with a bachelors degree in computer engineering from Tampere University of Applied Sciences. I focus on building efficient web apps, thoughtful UI, and clean, maintainable code.
+            Software engineer with a bachelors degree in computer engineering from Tampere University of Applied Sciences.
           </p>
         </section>
         <section id="projects" className="min-h-screen p-8 border-b border-gray-300" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
@@ -69,13 +69,13 @@ function HomePage() {
           </div>
         </section>
         <section id="contact" className="min-h-screen p-8" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
-          <h2 className="text-3xl mb-4">Contact</h2>
+          <h2 className="text-3xl mb-8">Contact</h2>
           <p 
             onClick={() => navigator.clipboard.writeText('silvansami50@gmail.com')}
-            className="cursor-pointer mb-4"
+            className="cursor-pointer mb-2"
             title="Click to copy email"
           >
-            Email: silvansami50@gmail.com
+            Email: silvansami50@gmail.com - Click to copy!
           </p>
           <p className="mb-2">LinkedIn: <a href="https://www.linkedin.com/in/sami-silvan-1b898b267/" className="text-blue-600 hover:underline">Sami Silvan</a></p>
           <p>GitHub: <a href="https://github.com/Samppa50" className="text-blue-600 hover:underline">@Samppa50</a></p>
