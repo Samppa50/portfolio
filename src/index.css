@@ -69,3 +69,29 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+/* Optional theme class to force black backgrounds and green text */
+.black-green-theme, .black-green-theme * {
+  background-color: #000000 !important;
+  color: #00ff00 !important;
+  border-color: #00ff00 !important;
+}
+
+.black-green-theme img,
+.black-green-theme video,
+.black-green-theme canvas {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+.black-green-theme a,
+.black-green-theme a:visited {
+  color: #00ff00 !important;
+}
+
+.black-green-theme button {
+  background-color: #000000 !important;
+  color: #00ff00 !important;
+  border-color: #00ff00 !important;
+}
+

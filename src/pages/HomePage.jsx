@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 function HomePage() {
   const projects = [
@@ -28,8 +29,33 @@ function HomePage() {
     }
   ]
 
+  const [enabled, setEnabled] = useState(() => {
+    try {
+      return localStorage.getItem('blackGreen') === 'true'
+    } catch (e) {
+      return false
+    }
+  })
+
+  useEffect(() => {
+    if (enabled) document.documentElement.classList.add('black-green-theme')
+    else document.documentElement.classList.remove('black-green-theme')
+  }, [enabled])
+
   return (
     <div className="w-4/5 flex flex-col mx-auto my-8">
+      <button
+        onClick={() => {
+          const next = !enabled
+          setEnabled(next)
+          if (next) document.documentElement.classList.add('black-green-theme')
+          else document.documentElement.classList.remove('black-green-theme')
+          localStorage.setItem('blackGreen', String(next))
+        }}
+        className="fixed top-4 right-4 z-50 rounded-full border px-3 py-2 bg-black text-[#00ff00] border-[#00ff00] font-semibold"
+      >
+        {enabled ? 'Light mode' : 'Dark mode'}
+      </button>
       <main className="flex flex-col gap-8">
         <section id="home" className="min-h-screen flex flex-col justify-center items-center p-8 text-center border-b border-gray-300" style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
           <div className="max-w-2xl">
